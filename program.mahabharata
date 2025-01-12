@@ -1,0 +1,45 @@
+SANKALPA() {
+    // Variable declarations
+    ARTHA counter = 0;
+    JALA sum = 0.0;
+    SATYA flag = true;
+    AKSHARA grade = "A";
+    VANI message = "Welcome to the custom language!";
+
+    // Output the message
+    MANTRA(message);
+
+    // For loop example
+    YATRA (counter = 0; counter < 5; counter = counter + 1) {
+        MANTRA("Counter value: ");
+        MANTRA(counter);
+    }
+
+    // Conditional example
+    DHARMA (flag == true) {
+        MANTRA("Flag is true");
+    } ADHARMA {
+        MANTRA("Flag is false");
+    }
+
+    // While loop example
+    TAPAS (counter > 0) {
+        counter = counter - 1;
+        MANTRA("Decrementing counter: ");
+        MANTRA(counter);
+    }
+
+    // Function call
+    AHVANA(calculateSum, 10, 20);
+
+    // Return statement
+    MOKSHA 0;
+}
+
+// Function definition
+YAJNA ARTHA calculateSum(ARTHA a, ARTHA b) {
+    ARTHA result = a + b;
+    MANTRA("Sum is: ");
+    MANTRA(result);
+    MOKSHA result;
+}
