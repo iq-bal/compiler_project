@@ -25,13 +25,13 @@
 "Akshara"        { return AKSHARA;}
 "Vani"           { return VANI;}
 
-"\+"             { return YOGA; }
-"\-"             { return VIYOGA; }
-"\*"             { return BAL; }
+"+"              { return YOGA; }
+"-"              { return VIYOGA; }
+"*"              { return BAL; }
 "/"              { return VIBHAJAN; }
 "%"              { return SHESHA; }
 "&&"             { return SAMAVAYA; }
-"\|\|"           { return VIBHAGA; }
+"||"             { return VIBHAGA; }
 "!"              { return MAYA; }
 
 
@@ -58,8 +58,7 @@
 
 [a-zA-Z_][a-zA-Z0-9_]*  {yylval.sval = strdup(yytext); return IDENTIFIER; }
 [0-9]+                   {yylval.ival = atoi(yytext); return INTEGER_LITERAL; }
-[0-9]+\.[0-9]+          {yylval.ival = atof(yytext); return FLOAT_LITERAL; }  
-"true"|"false"          { yylval.ival = (strcmp(yytext, "true") == 0); return BOOL_LITERAL; } 
+[0-9]+\.[0-9]+          {yylval.fval = atof(yytext); return FLOAT_LITERAL; }  
 \"([^\"\\]|\\[\"\\nrt])*\"  {yylval.sval = strdup(yytext); return STRING_LITERAL; }
 
 

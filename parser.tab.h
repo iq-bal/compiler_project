@@ -84,8 +84,7 @@
      LE = 300,
      GT = 301,
      GE = 302,
-     BOOL_LITERAL = 303,
-     FLOAT_LITERAL = 304
+     FLOAT_LITERAL = 303
    };
 #endif
 /* Tokens.  */
@@ -134,8 +133,7 @@
 #define LE 300
 #define GT 301
 #define GE 302
-#define BOOL_LITERAL 303
-#define FLOAT_LITERAL 304
+#define FLOAT_LITERAL 303
 
 
 
@@ -145,10 +143,11 @@ typedef union YYSTYPE
 #line 9 "parser.y"
 {
     int ival;
+    float fval;
     char *sval;
 }
 /* Line 1529 of yacc.c.  */
-#line 152 "parser.tab.h"
+#line 151 "parser.tab.h"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1

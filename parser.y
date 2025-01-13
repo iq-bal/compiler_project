@@ -8,6 +8,7 @@
 
 %union {
     int ival;
+    float fval;
     char *sval;
 }
 
@@ -21,8 +22,7 @@
 %token COMMA
 %token SANKALPA
 %token EQ NE LT LE GT GE
-%token BOOL_LITERAL FLOAT_LITERAL
-
+%token <fval> FLOAT_LITERAL 
 %%
 
 program: declarations functions main_function
@@ -73,18 +73,14 @@ conditional: DHARMA LPAREN expression RPAREN LBRACE statements RBRACE | DHARMA L
 loop: TAPAS LPAREN expression RPAREN LBRACE statements RBRACE
     
 
-for_loop: YATRA LPAREN for_initialization SEMICOLON for_condition SEMICOLON for_increment RPAREN LBRACE statements RBRACE
-    
+for_loop: 
+    YATRA LPAREN for_initialization SEMICOLON expression SEMICOLON assignment RPAREN LBRACE statements RBRACE
+    ;
 
-for_initialization: /* empty */ | assignment
-    
-
-for_condition: /* empty */ | expression
-    
-
-
-for_increment: /* empty */ | assignment
-    
+for_initialization:
+    type IDENTIFIER ASSIGN expression    /* For new variable declarations */
+    | assignment                         /* For existing variable assignments */
+    ;
 
 expression: term | expression YOGA term | expression VIYOGA term | expression VIBHAGA term | expression LT term | expression GT term | expression LE term | expression GE term | expression EQ term | expression NE term
     
@@ -95,7 +91,7 @@ term: factor | term BAL factor | term VIBHAJAN factor | term SHESHA factor | ter
 factor: LPAREN expression RPAREN | IDENTIFIER | literal | function_call
     
 
-literal: INTEGER_LITERAL | STRING_LITERAL | BOOL_LITERAL | FLOAT_LITERAL
+literal: INTEGER_LITERAL | STRING_LITERAL | FLOAT_LITERAL
     
 
 
@@ -110,7 +106,7 @@ argument_list: expression | argument_list COMMA expression
     
 
 
-input_output: SHRAVANA LPAREN IDENTIFIER RPAREN | MANTRA LPAREN expression RPAREN
+input_output: SHRAVANA LPAREN IDENTIFIER RPAREN | MANTRA LPAREN expression RPAREN 
     
 
 type: ARTHA | JALA | SATYA | AKSHARA | VANI
