@@ -1,45 +1,104 @@
-SANKALPA() {
-    // Variable declarations
-    ARTHA counter = 0;
-    JALA sum = 0.0;
-    SATYA flag = true;
-    AKSHARA grade = "A";
-    VANI message = "Welcome to the custom language!";
+Sankalpa() {
+    // Variable declarations and initialization
+    Artha counter = 0;
+    Jala balance = 1000.50;
+    Satya isActive = 1;
+    Akshara grade = 'A';
+    Vani welcomeMessage = "Welcome to the Dharma Bank";
 
-    // Output the message
-    MANTRA(message);
+    Mantra(welcomeMessage);
+    Mantra("Initial balance: ");
+    Mantra(balance);
 
-    // For loop example
-    YATRA (counter = 0; counter < 5; counter = counter + 1) {
-        MANTRA("Counter value: ");
-        MANTRA(counter);
+    // Input from user
+    Shravana(counter);
+    Mantra("User input received: ");
+    Mantra(counter);
+
+    // Conditional operations
+    Dharma (isActive == 1) {
+        Mantra("Account is active.");
+        Dharma (balance > 500) {
+            Mantra("Sufficient balance available.");
+        } Adharma (balance <= 500) {
+            Mantra("Low balance warning.");
+        }
+    } Adharma (isActive == 0) {
+        Mantra("Account is inactive.");
     }
 
-    // Conditional example
-    DHARMA (flag == true) {
-        MANTRA("Flag is true");
-    } ADHARMA {
-        MANTRA("Flag is false");
+    // Loop to simulate transactions
+    Yatra (Artha i = 0; i < 5; i = i + 1) {
+        Mantra("Transaction cycle: ");
+        Mantra(i);
+
+        balance = balance - 100;
+        Mantra("Balance after transaction: ");
+        Mantra(balance);
+
+        // Nested condition
+        Dharma (balance <= 200) {
+            Mantra("Warning: Balance below threshold!");
+            Tyaga;  // Exit the loop early
+        }
     }
 
-    // While loop example
-    TAPAS (counter > 0) {
-        counter = counter - 1;
-        MANTRA("Decrementing counter: ");
-        MANTRA(counter);
+    // Function calls with parameters
+    Jala totalBalance = Ahvana(calculateInterest(balance, 5));
+    Mantra("Balance after interest calculation: ");
+    Mantra(totalBalance);
+
+    Artha sum = Ahvana(addNumbers(10, 20));
+    Mantra("Sum of numbers: ");
+    Mantra(sum);
+
+    // Try-catch block
+    Prayaschitta {
+        Mantra("Attempting risky operation...");
+        balance = balance / 0;  // Intentional division by zero
+    } Shanti("DivisionError") {
+        Mantra("Caught an error: Division by zero.");
     }
 
-    // Function call
-    AHVANA(calculateSum, 10, 20);
+    // Nested loops to simulate a matrix operation
+    Mantra("Matrix simulation starts:");
+    Yatra (Artha i = 0; i < 3; i = i + 1) {
+        Yatra (Artha j = 0; j < 3; j = j + 1) {
+            Mantra("Matrix element [");
+            Mantra(i);
+            Mantra("][");
+            Mantra(j);
+            Mantra("] = ");
+            Mantra(i * j);
+        }
+    }
 
-    // Return statement
-    MOKSHA 0;
+    Moksha 0;
 }
 
-// Function definition
-YAJNA ARTHA calculateSum(ARTHA a, ARTHA b) {
-    ARTHA result = a + b;
-    MANTRA("Sum is: ");
-    MANTRA(result);
-    MOKSHA result;
+// Function to calculate interest
+Yajna Jala calculateInterest(Jala principal, Artha rate) {
+    Jala interest = principal * rate / 100;
+    Jala total = principal + interest;
+    Moksha total;
+}
+
+// Function to add two numbers
+Yajna Artha addNumbers(Artha x, Artha y) {
+    Artha result = x + y;
+    Moksha result;
+}
+
+// Recursive function to calculate factorial
+Yajna Artha factorial(Artha n) {
+    Dharma (n <= 1) {
+        Moksha 1;
+    }
+    Moksha n * Ahvana(factorial(n - 1));
+}
+
+// Function to demonstrate nested parameter use
+Yajna Artha computeComplexOperation(Artha a, Artha b, Artha c) {
+    Artha result = (a + b) * c - Ahvana(addNumbers(a, b));
+    Moksha result;
 }

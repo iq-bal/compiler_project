@@ -1,30 +1,109 @@
 end of the functions
 data type is - ARTHA
-data type is - ARTHA
-parameter of type ARTHA is needed to pass to the function
-data type is - ARTHA
-parameter of type ARTHA is needed to pass to the function
-parameter_list
-parameters in the function declaration
-name of the identifier is - a
-name of the identifier is - b
-addition operation execution started
+Artha type variable and the value is - 0
+declaration execution started....name of the identifier is - counter
 statements
-name of the function is - Add and the return type is - declaration of a function
-data type is - ARTHA
-name of the identifier is - Add
-argument_list
-Artha type variable and the value is - 10
-comma separated argument_list
-Artha type variable and the value is - 20
-comma separated argument_list
-arguments
-function_call
-factor
-declaration execution started....name of the identifier is - result
+data type is - JALA
+Jala type variable and the value is - 1000.500000
+declaration execution started....name of the identifier is - balance
 statements
-name of the identifier is - result
+data type is - SATYA
+Artha type variable and the value is - 1
+declaration execution started....name of the identifier is - isActive
+statements
+data type is - AKSHARA
+name of the identifier is - A
+declaration execution started....name of the identifier is - grade
+statements
+data type is - VANI
+Vani type variable and the value is - "Welcome to the Dharma Bank"
+declaration execution started....name of the identifier is - welcomeMessage
+statements
+name of the identifier is - welcomeMessage
 printing to the console....
 statements
-main_function execution started
-program execution started
+Vani type variable and the value is - "Initial balance: "
+printing to the console....
+statements
+name of the identifier is - balance
+printing to the console....
+statements
+taking input from user to the variable counter
+statements
+Vani type variable and the value is - "User input received: "
+printing to the console....
+statements
+name of the identifier is - counter
+printing to the console....
+statements
+name of the identifier is - isActive
+Artha type variable and the value is - 1
+equal to operation execution started
+Vani type variable and the value is - "Account is active."
+printing to the console....
+statements
+name of the identifier is - balance
+Artha type variable and the value is - 500
+greater than operation execution started
+Vani type variable and the value is - "Sufficient balance available."
+printing to the console....
+statements
+name of the identifier is - balance
+Artha type variable and the value is - 500
+less than or equal to operation execution started
+Vani type variable and the value is - "Low balance warning."
+printing to the console....
+statements
+statements
+name of the identifier is - isActive
+Artha type variable and the value is - 0
+equal to operation execution started
+Vani type variable and the value is - "Account is inactive."
+printing to the console....
+statements
+statements
+data type is - ARTHA
+Artha type variable and the value is - 0
+declaration execution started....name of the identifier is - i
+for_initialization
+name of the identifier is - i
+Artha type variable and the value is - 5
+less than operation execution started
+for_condition
+name of the identifier is - i
+Artha type variable and the value is - 1
+addition operation execution started
+assignment
+for_increment
+Vani type variable and the value is - "Transaction cycle: "
+printing to the console....
+statements
+name of the identifier is - i
+printing to the console....
+statements
+name of the identifier is - balance
+Artha type variable and the value is - 100
+subtraction operation execution started
+assignment
+statements
+Vani type variable and the value is - "Balance after transaction: "
+printing to the console....
+statements
+name of the identifier is - balance
+printing to the console....
+statements
+name of the identifier is - balance
+Artha type variable and the value is - 200
+less than or equal to operation execution started
+Vani type variable and the value is - "Warning: Balance below threshold!"
+printing to the console....
+statements
+statements
+statements
+for_loop
+statements
+data type is - JALA
+name of the identifier is - calculateInterest
+argument_list
+arguments
+Error: syntax error
