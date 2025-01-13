@@ -1,5 +1,7 @@
+type
 declaration
 statements
+input_output
 statements
 main_function
 program

@@ -1,0 +1,11 @@
+Sankalpa()
+{
+    Artha x = 5;
+    Dharma (x > 10) {
+        Mantra("x is greater than 10");
+    } Vikalpa (x == 10) {
+        Mantra("x is equal to 10");
+    } Adharma {
+        Mantra("x is less than 10");
+    }
+}   

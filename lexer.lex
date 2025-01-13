@@ -20,6 +20,7 @@
 "Sankalpa"      { return SANKALPA;} 
 "Prayaschitta"  { return PRAYASCHITTA;}
 "Shanti"         { return SHANTI;}
+"Vikalpa"       { return VIKALPA;}
 
 "Artha"          { return ARTHA;}
 "Jala"           { return JALA;}
