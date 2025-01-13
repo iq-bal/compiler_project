@@ -1,0 +1,8 @@
+Sankalpa() {
+    Artha num = 30;
+    Dharma(num < 20) {
+        Mantra("Less than 20");
+    } Adharma(num >= 20) {
+        Mantra("20 or greater");
+    }
+}

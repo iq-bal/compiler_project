@@ -1,0 +1,6 @@
+Sankalpa() {
+    Artha i = 0;
+    Yatra(i = 0; i < 5; i = i + 1) {
+        Mantra(i);
+    }
+}

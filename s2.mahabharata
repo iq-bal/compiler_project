@@ -1,4 +1,15 @@
-Sankalpa(){
+//global variable declaration
+Artha counter = 0;
+
+//function definition
+Yajna Artha foo(Artha a, Artha b) {
+    Moksha a + b;
+}
+
+
+
+//main function
+Sankalpa() {
     // Variable declarations
     Artha counter = 0;
     Jala sum = 0.0;
@@ -6,15 +17,48 @@ Sankalpa(){
     Akshara grade = "A";
     Vani message = "Welcome to the custom language!";
 
-
     // Output the message
     Mantra(message);
 
     // For loop example
-    YATRA (Artha counter = 0; counter < 5; counter = counter + 1) {
-        MANTRA("Counter value: ");
-        MANTRA(counter);
+    Artha i = 0;
+    Artha j = 0;
+
+    Artha k = i + j;
+
+    Mantra(k);
+
+    k = k + 1;
+
+    Mantra(k);
+
+
+    // Conditional statement
+    Dharma(k<5) {
+        Mantra(k);
+    }
+    
+    //conditional statement with else
+    Dharma(k<5) {
+        Mantra(k);
+    }Adharma(k<5) {
+        Mantra(k);
     }
 
-    
+    //while loop
+    Tapas(k<5) {
+        Mantra(k);
+    }
+
+    //function call
+    Ahvana(foo, 10, 20);
+
+    //for loop
+    Yatra(Artha i = 0; i < 5; i = i + 1) {
+        Mantra(i);
+    }
+
 }
+
+
+

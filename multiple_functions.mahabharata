@@ -1,0 +1,14 @@
+Yajna Artha Multiply(Artha a, Artha b) {
+    Moksha a * b;
+}
+
+Yajna Artha Subtract(Artha a, Artha b) {
+    Moksha a - b;
+}
+
+Sankalpa() {
+    Artha result1 = Ahvana(Multiply, 10, 5);
+    Artha result2 = Ahvana(Subtract, 10, 5);
+    Mantra(result1);
+    Mantra(result2);
+}

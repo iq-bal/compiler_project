@@ -1,0 +1,13 @@
+//function definition
+Yajna Artha foo(Artha a, Artha b, Artha c) {
+    Moksha a + b + c;
+}
+
+//main function
+Sankalpa() {
+    //function call
+    Ahvana(foo, 10, 20,30);
+}
+
+
+

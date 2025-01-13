@@ -1,0 +1,8 @@
+Sankalpa() {
+    Artha a = 10;
+    Jala b = 5.5;
+    Akshara grade = "A";
+    Mantra(a);
+    Mantra(b);
+    Mantra(grade);
+}

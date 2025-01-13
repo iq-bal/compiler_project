@@ -1,0 +1,6 @@
+Sankalpa() {
+    Artha num = 10;
+    Dharma(num < 20) {
+        Mantra(num);
+    }
+}

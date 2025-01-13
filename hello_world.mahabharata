@@ -1,0 +1,4 @@
+Sankalpa() {
+    Vani message = "Hello, World!";
+    Mantra(message);
+}

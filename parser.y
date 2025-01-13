@@ -25,7 +25,7 @@
 %token <fval> FLOAT_LITERAL 
 %%
 
-program: declarations functions main_function
+program: declarations functions main_function 
     
 
 main_function: SANKALPA LPAREN RPAREN LBRACE statements RBRACE
@@ -67,20 +67,23 @@ statement: declaration SEMICOLON | assignment SEMICOLON | conditional | loop | f
 assignment: IDENTIFIER ASSIGN expression
     
 
-conditional: DHARMA LPAREN expression RPAREN LBRACE statements RBRACE | DHARMA LPAREN expression RPAREN LBRACE statements ADHARMA LBRACE statements RBRACE
+conditional: DHARMA LPAREN expression RPAREN LBRACE statements RBRACE | DHARMA LPAREN expression RPAREN LBRACE statements RBRACE ADHARMA LPAREN expression RPAREN LBRACE statements RBRACE
     
 
 loop: TAPAS LPAREN expression RPAREN LBRACE statements RBRACE
     
 
-for_loop: 
-    YATRA LPAREN for_initialization SEMICOLON expression SEMICOLON assignment RPAREN LBRACE statements RBRACE
-    ;
+for_loop: YATRA LPAREN for_initialization SEMICOLON for_condition SEMICOLON for_increment RPAREN LBRACE statements RBRACE
+    
 
-for_initialization:
-    type IDENTIFIER ASSIGN expression    /* For new variable declarations */
-    | assignment                         /* For existing variable assignments */
-    ;
+for_initialization: /* empty */ | assignment | declaration
+    
+
+for_condition: /* empty */ | expression 
+    
+
+for_increment: /* empty */ | assignment
+    
 
 expression: term | expression YOGA term | expression VIYOGA term | expression VIBHAGA term | expression LT term | expression GT term | expression LE term | expression GE term | expression EQ term | expression NE term
     

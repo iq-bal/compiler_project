@@ -1,0 +1,12 @@
+Yajna Artha Max(Artha a, Artha b) {
+    Dharma(a > b) {
+        Moksha a;
+    } Adharma(a <= b) {
+        Moksha b;
+    }
+}
+
+Sankalpa() {
+    Artha result = Ahvana(Max, 10, 20);
+    Mantra(result);
+}

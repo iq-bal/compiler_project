@@ -1,0 +1,7 @@
+Sankalpa() {
+    Artha counter = 0;
+    Tapas(counter < 5) {
+        Mantra(counter);
+        counter = counter + 1;
+    }
+}

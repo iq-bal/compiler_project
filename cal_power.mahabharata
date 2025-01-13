@@ -1,0 +1,15 @@
+Yajna Jala Power(Jala base, Artha exp) {
+    Jala result = 1.0;
+    Tapas(exp > 0) {
+        result = result * base;
+        exp = exp - 1;
+    }
+    Moksha result;
+}
+
+Sankalpa() {
+    Jala base = 2.0;
+    Artha exp = 3;
+    Jala result = Ahvana(Power, base, exp);
+    Mantra(result);
+}   

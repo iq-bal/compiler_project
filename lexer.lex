@@ -25,13 +25,13 @@
 "Akshara"        { return AKSHARA;}
 "Vani"           { return VANI;}
 
-"+"              { return YOGA; }
-"-"              { return VIYOGA; }
-"*"              { return BAL; }
+"\+"             { return YOGA; }
+"\-"             { return VIYOGA; }
+"\*"             { return BAL; }
 "/"              { return VIBHAJAN; }
 "%"              { return SHESHA; }
 "&&"             { return SAMAVAYA; }
-"||"             { return VIBHAGA; }
+"\|\|"           { return VIBHAGA; }
 "!"              { return MAYA; }
 
 

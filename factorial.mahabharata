@@ -1,0 +1,15 @@
+//function definition
+Yajna Artha factorial(Artha number) {
+    Artha result = 1;
+    Tapas (number > 0) {
+        result = result * number;
+        number = number - 1;
+    }
+    Moksha result;
+}
+
+Sankalpa() {
+    Artha number = 5;
+    Ahvana(factorial, number);
+    Mantra("Factorial calculated!");
+}
