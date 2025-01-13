@@ -1,0 +1,10 @@
+Sankalpa() {
+    Artha a = 10;
+    Jala b = 0.0;
+
+    Prayaschitta {
+        Mantra(a / b);  // Division by zero
+    } Shanti(Exception) {
+        Mantra("Error: Division by zero");
+    }
+}

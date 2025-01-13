@@ -18,6 +18,8 @@
 "Mantra"         { return MANTRA;}
 "Shravana"       { return SHRAVANA;}
 "Sankalpa"      { return SANKALPA;} 
+"Prayaschitta"  { return PRAYASCHITTA;}
+"Shanti"         { return SHANTI;}
 
 "Artha"          { return ARTHA;}
 "Jala"           { return JALA;}

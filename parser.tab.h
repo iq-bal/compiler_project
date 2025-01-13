@@ -84,7 +84,9 @@
      LE = 300,
      GT = 301,
      GE = 302,
-     FLOAT_LITERAL = 303
+     FLOAT_LITERAL = 303,
+     PRAYASCHITTA = 304,
+     SHANTI = 305
    };
 #endif
 /* Tokens.  */
@@ -134,20 +136,22 @@
 #define GT 301
 #define GE 302
 #define FLOAT_LITERAL 303
+#define PRAYASCHITTA 304
+#define SHANTI 305
 
 
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 9 "parser.y"
+#line 11 "parser.y"
 {
     int ival;
     float fval;
     char *sval;
 }
 /* Line 1529 of yacc.c.  */
-#line 151 "parser.tab.h"
+#line 155 "parser.tab.h"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1

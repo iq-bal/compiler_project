@@ -1,0 +1,5 @@
+declaration
+statements
+statements
+main_function
+program

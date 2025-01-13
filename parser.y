@@ -4,6 +4,8 @@
     #include <string.h>
     void yyerror(const char *s);
     int yylex();
+
+    FILE *output_file;
 %}
 
 %union {
@@ -23,48 +25,52 @@
 %token SANKALPA
 %token EQ NE LT LE GT GE
 %token <fval> FLOAT_LITERAL 
+%token PRAYASCHITTA SHANTI
 %%
 
-program: declarations functions main_function 
+program: declarations functions main_function {fprintf(output_file, "program\n");}
     
 
-main_function: SANKALPA LPAREN RPAREN LBRACE statements RBRACE
+main_function: SANKALPA LPAREN RPAREN LBRACE statements RBRACE {fprintf(output_file, "main_function\n");}
     
 
-declarations: /* empty */ | declarations declaration SEMICOLON
+declarations: /* empty */ | declarations declaration SEMICOLON {fprintf(output_file, "declarations\n");}
     
 
-declaration: type IDENTIFIER| type IDENTIFIER ASSIGN expression
+declaration: type IDENTIFIER| type IDENTIFIER ASSIGN expression {fprintf(output_file, "declaration\n");}    
     
 
-functions: /* empty */ | functions function_declaration
-    
-
-
-function_declaration: YAJNA type IDENTIFIER LPAREN parameters RPAREN LBRACE statements RBRACE
-    
-
-parameters: /* empty */ | parameter_list
+functions: /* empty */ | functions function_declaration {fprintf(output_file, "functions\n");}
     
 
 
-parameter_list: parameter | parameter_list COMMA parameter
+function_declaration: YAJNA type IDENTIFIER LPAREN parameters RPAREN LBRACE statements RBRACE {fprintf(output_file, "function_declaration\n");}
+    
+
+parameters: /* empty */ | parameter_list {fprintf(output_file, "parameters\n");}
     
 
 
-parameter: type IDENTIFIER
+parameter_list: parameter | parameter_list COMMA parameter {fprintf(output_file, "parameter_list\n");}
     
 
 
-statements: /* empty */ | statements statement
+parameter: type IDENTIFIER {fprintf(output_file, "parameter\n");}
+    
+
+
+statements: /* empty */ | statements statement {fprintf(output_file, "statements\n");}
     
 
 
 statement: declaration SEMICOLON | assignment SEMICOLON | conditional | loop | for_loop | TYAGA SEMICOLON | NIVRITTI SEMICOLON | function_call SEMICOLON
     | MOKSHA expression SEMICOLON | input_output SEMICOLON
+    | try_catch_block {fprintf(output_file, "statement\n");}
+
+try_catch_block: PRAYASCHITTA LBRACE statements RBRACE SHANTI LPAREN IDENTIFIER RPAREN LBRACE statements RBRACE {fprintf(output_file, "try_catch_block\n");}
     
 
-assignment: IDENTIFIER ASSIGN expression
+assignment: IDENTIFIER ASSIGN expression {fprintf(output_file, "assignment\n");}    
     
 
 conditional: DHARMA LPAREN expression RPAREN LBRACE statements RBRACE | DHARMA LPAREN expression RPAREN LBRACE statements RBRACE ADHARMA LPAREN expression RPAREN LBRACE statements RBRACE
@@ -118,10 +124,18 @@ type: ARTHA | JALA | SATYA | AKSHARA | VANI
 %%
 
 int main(int argc, char *argv[]) {
+
+    output_file = fopen("output.txt", "w");
+    if (output_file == NULL) {
+        printf("Error: Failed to open output file\n");
+        return 1;
+    }
+
     yyparse();
     return 0;
 }
 
 void yyerror(const char *s) {
     printf("Error: %s\n", s);
+    fprintf(output_file, "Error: %s\n", s);
 }
