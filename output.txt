@@ -1,7 +1,30 @@
-type
-declaration
+end of the functions
+data type is - ARTHA
+data type is - ARTHA
+parameter of type ARTHA is needed to pass to the function
+data type is - ARTHA
+parameter of type ARTHA is needed to pass to the function
+parameter_list
+parameters in the function declaration
+name of the identifier is - a
+name of the identifier is - b
+addition operation execution started
 statements
-input_output
+name of the function is - Add and the return type is - declaration of a function
+data type is - ARTHA
+name of the identifier is - Add
+argument_list
+Artha type variable and the value is - 10
+comma separated argument_list
+Artha type variable and the value is - 20
+comma separated argument_list
+arguments
+function_call
+factor
+declaration execution started....name of the identifier is - result
 statements
-main_function
-program
+name of the identifier is - result
+printing to the console....
+statements
+main_function execution started
+program execution started
