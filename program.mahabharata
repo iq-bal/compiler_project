@@ -1,104 +1,118 @@
+// global variables
+Artha a = 5;
+Artha b = 10;
+Jala base = 2.0;
+Artha exp = 3;
+
+
+//function declaration
+Yajna Artha Add(Artha a, Artha b) {
+    Moksha a + b;
+}
+
+
+//function definition
+Yajna Artha factorial(Artha number) {
+    Artha result = 1;
+    Tapas (number > 0) {
+        result = result * number;
+        number = number - 1;
+    }
+    Moksha result;
+}
+
+
 Sankalpa() {
-    // Variable declarations and initialization
-    Artha counter = 0;
-    Jala balance = 1000.50;
-    Satya isActive = 1;
-    Akshara grade = 'A';
-    Vani welcomeMessage = "Welcome to the Dharma Bank";
-
+    // Welcome message
+    Vani welcomeMessage = "Welcome to the Utility Application!";
     Mantra(welcomeMessage);
-    Mantra("Initial balance: ");
-    Mantra(balance);
 
-    // Input from user
-    Shravana(counter);
-    Mantra("User input received: ");
-    Mantra(counter);
+    // Variables for calculations
+    Artha a = 5;
+    Artha b = 10;
+    Jala base = 2.0;
+    Artha exp = 3;
 
-    // Conditional operations
-    Dharma (isActive == 1) {
-        Mantra("Account is active.");
-        Dharma (balance > 500) {
-            Mantra("Sufficient balance available.");
-        } Adharma (balance <= 500) {
-            Mantra("Low balance warning.");
-        }
-    } Adharma (isActive == 0) {
-        Mantra("Account is inactive.");
-    }
-
-    // Loop to simulate transactions
-    Yatra (Artha i = 0; i < 5; i = i + 1) {
-        Mantra("Transaction cycle: ");
-        Mantra(i);
-
-        balance = balance - 100;
-        Mantra("Balance after transaction: ");
-        Mantra(balance);
-
-        // Nested condition
-        Dharma (balance <= 200) {
-            Mantra("Warning: Balance below threshold!");
-            Tyaga;  // Exit the loop early
-        }
-    }
-
-    // Function calls with parameters
-    Jala totalBalance = Ahvana(calculateInterest(balance, 5));
-    Mantra("Balance after interest calculation: ");
-    Mantra(totalBalance);
-
-    Artha sum = Ahvana(addNumbers(10, 20));
-    Mantra("Sum of numbers: ");
+    // Basic arithmetic using functions
+    Artha sum = Ahvana(Add, a, b);
+    Mantra("Sum of a and b:");
     Mantra(sum);
 
-    // Try-catch block
-    Prayaschitta {
-        Mantra("Attempting risky operation...");
-        balance = balance / 0;  // Intentional division by zero
-    } Shanti("DivisionError") {
-        Mantra("Caught an error: Division by zero.");
+   
+    // Factorial calculation
+    Artha factInput = 5;
+    Artha factResult = Ahvana(factorial, factInput);
+    Mantra("Factorial of:");
+    Mantra(factInput);
+    Mantra(factResult);
+
+    
+
+    // Decision-making examples
+    Artha num = 30;
+    Dharma(num < 20) {
+        Mantra("Number is less than 20");
+    } Adharma(num >= 20) {
+        Mantra("Number is 20 or greater");
     }
 
-    // Nested loops to simulate a matrix operation
-    Mantra("Matrix simulation starts:");
-    Yatra (Artha i = 0; i < 3; i = i + 1) {
-        Yatra (Artha j = 0; j < 3; j = j + 1) {
-            Mantra("Matrix element [");
+    // Looping example with counters
+    Mantra("Counting from 0 to 4:");
+    Artha counter = 0;
+    Tapas(counter < 5) {
+        Mantra(counter);
+        counter = counter + 1;
+    }
+
+
+    Artha i = 0;
+    Yatra(i = 0; i < 5; i = i + 1) {
+        Mantra(i);
+    }
+
+    Yatra(Artha i = 0; i < 5; i = i + 1) {
+        Mantra(i);
+    }
+
+    Yatra(Artha i = 0; i < 5; i = i + 1) {
+        Yatra(Artha j = 0; j < 5; j = j + 1) {
             Mantra(i);
-            Mantra("][");
             Mantra(j);
-            Mantra("] = ");
-            Mantra(i * j);
         }
     }
 
-    Moksha 0;
-}
 
-// Function to calculate interest
-Yajna Jala calculateInterest(Jala principal, Artha rate) {
-    Jala interest = principal * rate / 100;
-    Jala total = principal + interest;
-    Moksha total;
-}
-
-// Function to add two numbers
-Yajna Artha addNumbers(Artha x, Artha y) {
-    Artha result = x + y;
-    Moksha result;
-}
-
-// Recursive function to calculate factorial
-Yajna Artha factorial(Artha n) {
-    Dharma (n <= 1) {
-        Moksha 1;
+    // Nested conditional example
+    Artha x = 5;
+    Dharma (x > 10) {
+        Mantra("x is greater than 10");
+    } Vikalpa (x == 10) {
+        Mantra("x is equal to 10");
+    } Adharma {
+        Mantra("x is less than 10");
     }
-    Moksha n * Ahvana(factorial(n - 1));
-}
 
-// Function to demonstrate nested parameter use
-Yajna Artha computeComplexOperation(Artha a, Artha b, Artha c) {
-    Artha result = (a + b) * c - Ahvana(addNumbers(a, b));
-    Moksha result;
+    
+
+
+    // String and character handling
+    Vani greeting = "Hello, User!";
+    Akshara initial = 'U';
+    Mantra("Greeting:");
+    Mantra(greeting);
+    Mantra("First character of User:");
+    Mantra(initial);
+
+    // Error handling example
+    Jala invalidDivision = 0.0;
+    Prayaschitta {
+        Jala divResult = a / invalidDivision;
+        Mantra(divResult);
+    } Shanti(Exception) {
+        Mantra("Caught an error: Division by zero");
+    }
+
+    // Final farewell message
+    Vani farewellMessage = "Thank you for using the Utility Application!";
+    Mantra(farewellMessage);
 }

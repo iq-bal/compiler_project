@@ -388,7 +388,7 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    2,    4,    5,    1,    1,    6,    7,    1,    8,
+        1,    2,    4,    5,    1,    1,    6,    7,    2,    8,
         9,   10,   11,   12,   13,   14,   15,   16,   16,   16,
        16,   16,   16,   16,   16,   16,   16,    1,   17,   18,
        19,   20,    1,    1,   21,   22,   23,   24,   23,   23,
@@ -1059,50 +1059,50 @@ YY_RULE_SETUP
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 62 "lexer.lex"
+#line 64 "lexer.lex"
 {yylval.sval = strdup(yytext); return IDENTIFIER; }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 63 "lexer.lex"
+#line 65 "lexer.lex"
 {yylval.ival = atoi(yytext); return INTEGER_LITERAL; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 64 "lexer.lex"
+#line 66 "lexer.lex"
 {yylval.fval = atof(yytext); return FLOAT_LITERAL; }  
 	YY_BREAK
 case 49:
 /* rule 49 can match eol */
 YY_RULE_SETUP
-#line 65 "lexer.lex"
+#line 67 "lexer.lex"
 {yylval.sval = strdup(yytext); return STRING_LITERAL; }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 68 "lexer.lex"
+#line 70 "lexer.lex"
 { /* Ignore single line comments */ }
 	YY_BREAK
 case 51:
 /* rule 51 can match eol */
 YY_RULE_SETUP
-#line 69 "lexer.lex"
+#line 71 "lexer.lex"
 { /* Ignore multi line comments */ }
 	YY_BREAK
 case 52:
 /* rule 52 can match eol */
 YY_RULE_SETUP
-#line 71 "lexer.lex"
+#line 73 "lexer.lex"
 { /* Ignore whitespace */ }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 72 "lexer.lex"
+#line 74 "lexer.lex"
 { printf("Unknown token: %s\n", yytext); }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 74 "lexer.lex"
+#line 76 "lexer.lex"
 ECHO;
 	YY_BREAK
 #line 1108 "lex.yy.c"
@@ -2110,7 +2110,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 74 "lexer.lex"
+#line 76 "lexer.lex"
 
 
 

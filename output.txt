@@ -1,66 +1,178 @@
+data type is - ARTHA
+Artha type variable and the value is - 5
+declaration execution started....name of the identifier is - a
+declarations execution started
+data type is - ARTHA
+Artha type variable and the value is - 10
+declaration execution started....name of the identifier is - b
+declarations execution started
+data type is - JALA
+Jala type variable and the value is - 2.000000
+declaration execution started....name of the identifier is - base
+declarations execution started
+data type is - ARTHA
+Artha type variable and the value is - 3
+declaration execution started....name of the identifier is - exp
+declarations execution started
 end of the functions
 data type is - ARTHA
-Artha type variable and the value is - 0
-declaration execution started....name of the identifier is - counter
+data type is - ARTHA
+parameter of type ARTHA is needed to pass to the function
+data type is - ARTHA
+parameter of type ARTHA is needed to pass to the function
+parameter_list
+parameters in the function declaration
+name of the identifier is - a
+name of the identifier is - b
+addition operation execution started
 statements
-data type is - JALA
-Jala type variable and the value is - 1000.500000
-declaration execution started....name of the identifier is - balance
-statements
-data type is - SATYA
+name of the function is - Add and the return type is - declaration of a function
+data type is - ARTHA
+data type is - ARTHA
+parameter of type ARTHA is needed to pass to the function
+parameters in the function declaration
+data type is - ARTHA
 Artha type variable and the value is - 1
-declaration execution started....name of the identifier is - isActive
+declaration execution started....name of the identifier is - result
 statements
-data type is - AKSHARA
-name of the identifier is - A
-declaration execution started....name of the identifier is - grade
+name of the identifier is - number
+Artha type variable and the value is - 0
+greater than operation execution started
+name of the identifier is - result
+name of the identifier is - number
+multiplication operation execution started
+assignment
 statements
+name of the identifier is - number
+Artha type variable and the value is - 1
+subtraction operation execution started
+assignment
+statements
+loop
+statements
+name of the identifier is - result
+statements
+name of the function is - factorial and the return type is - declaration of a function
 data type is - VANI
-Vani type variable and the value is - "Welcome to the Dharma Bank"
+Vani type variable and the value is - "Welcome to the Utility Application!"
 declaration execution started....name of the identifier is - welcomeMessage
 statements
 name of the identifier is - welcomeMessage
 printing to the console....
 statements
-Vani type variable and the value is - "Initial balance: "
+data type is - ARTHA
+Artha type variable and the value is - 5
+declaration execution started....name of the identifier is - a
+statements
+data type is - ARTHA
+Artha type variable and the value is - 10
+declaration execution started....name of the identifier is - b
+statements
+data type is - JALA
+Jala type variable and the value is - 2.000000
+declaration execution started....name of the identifier is - base
+statements
+data type is - ARTHA
+Artha type variable and the value is - 3
+declaration execution started....name of the identifier is - exp
+statements
+data type is - ARTHA
+name of the identifier is - Add
+argument_list
+name of the identifier is - a
+comma separated argument_list
+name of the identifier is - b
+comma separated argument_list
+arguments
+function_call
+factor
+declaration execution started....name of the identifier is - sum
+statements
+Vani type variable and the value is - "Sum of a and b:"
 printing to the console....
 statements
-name of the identifier is - balance
+name of the identifier is - sum
 printing to the console....
 statements
-taking input from user to the variable counter
+data type is - ARTHA
+Artha type variable and the value is - 5
+declaration execution started....name of the identifier is - factInput
 statements
-Vani type variable and the value is - "User input received: "
+data type is - ARTHA
+name of the identifier is - factorial
+argument_list
+name of the identifier is - factInput
+comma separated argument_list
+arguments
+function_call
+factor
+declaration execution started....name of the identifier is - factResult
+statements
+Vani type variable and the value is - "Factorial of:"
 printing to the console....
 statements
+name of the identifier is - factInput
+printing to the console....
+statements
+name of the identifier is - factResult
+printing to the console....
+statements
+data type is - ARTHA
+Artha type variable and the value is - 30
+declaration execution started....name of the identifier is - num
+statements
+name of the identifier is - num
+Artha type variable and the value is - 20
+less than operation execution started
+Vani type variable and the value is - "Number is less than 20"
+printing to the console....
+statements
+name of the identifier is - num
+Artha type variable and the value is - 20
+greater than or equal to operation execution started
+Vani type variable and the value is - "Number is 20 or greater"
+printing to the console....
+statements
+statements
+Vani type variable and the value is - "Counting from 0 to 4:"
+printing to the console....
+statements
+data type is - ARTHA
+Artha type variable and the value is - 0
+declaration execution started....name of the identifier is - counter
+statements
+name of the identifier is - counter
+Artha type variable and the value is - 5
+less than operation execution started
 name of the identifier is - counter
 printing to the console....
 statements
-name of the identifier is - isActive
+name of the identifier is - counter
 Artha type variable and the value is - 1
-equal to operation execution started
-Vani type variable and the value is - "Account is active."
-printing to the console....
+addition operation execution started
+assignment
 statements
-name of the identifier is - balance
-Artha type variable and the value is - 500
-greater than operation execution started
-Vani type variable and the value is - "Sufficient balance available."
-printing to the console....
+loop
 statements
-name of the identifier is - balance
-Artha type variable and the value is - 500
-less than or equal to operation execution started
-Vani type variable and the value is - "Low balance warning."
-printing to the console....
-statements
-statements
-name of the identifier is - isActive
+data type is - ARTHA
 Artha type variable and the value is - 0
-equal to operation execution started
-Vani type variable and the value is - "Account is inactive."
+declaration execution started....name of the identifier is - i
+statements
+Artha type variable and the value is - 0
+assignment
+name of the identifier is - i
+Artha type variable and the value is - 5
+less than operation execution started
+for_condition
+name of the identifier is - i
+Artha type variable and the value is - 1
+addition operation execution started
+assignment
+for_increment
+name of the identifier is - i
 printing to the console....
 statements
+for_loop
 statements
 data type is - ARTHA
 Artha type variable and the value is - 0
@@ -75,35 +187,115 @@ Artha type variable and the value is - 1
 addition operation execution started
 assignment
 for_increment
-Vani type variable and the value is - "Transaction cycle: "
-printing to the console....
-statements
 name of the identifier is - i
 printing to the console....
 statements
-name of the identifier is - balance
-Artha type variable and the value is - 100
-subtraction operation execution started
+for_loop
+statements
+data type is - ARTHA
+Artha type variable and the value is - 0
+declaration execution started....name of the identifier is - i
+for_initialization
+name of the identifier is - i
+Artha type variable and the value is - 5
+less than operation execution started
+for_condition
+name of the identifier is - i
+Artha type variable and the value is - 1
+addition operation execution started
 assignment
-statements
-Vani type variable and the value is - "Balance after transaction: "
+for_increment
+data type is - ARTHA
+Artha type variable and the value is - 0
+declaration execution started....name of the identifier is - j
+for_initialization
+name of the identifier is - j
+Artha type variable and the value is - 5
+less than operation execution started
+for_condition
+name of the identifier is - j
+Artha type variable and the value is - 1
+addition operation execution started
+assignment
+for_increment
+name of the identifier is - i
 printing to the console....
 statements
-name of the identifier is - balance
+name of the identifier is - j
 printing to the console....
-statements
-name of the identifier is - balance
-Artha type variable and the value is - 200
-less than or equal to operation execution started
-Vani type variable and the value is - "Warning: Balance below threshold!"
-printing to the console....
-statements
-statements
 statements
 for_loop
 statements
+for_loop
+statements
+data type is - ARTHA
+Artha type variable and the value is - 5
+declaration execution started....name of the identifier is - x
+statements
+name of the identifier is - x
+Artha type variable and the value is - 10
+greater than operation execution started
+Vani type variable and the value is - "x is greater than 10"
+printing to the console....
+statements
+name of the identifier is - x
+Artha type variable and the value is - 10
+equal to operation execution started
+Vani type variable and the value is - "x is equal to 10"
+printing to the console....
+statements
+else_if_block
+else_if_blocks
+Vani type variable and the value is - "x is less than 10"
+printing to the console....
+statements
+conditional
+statements
+data type is - VANI
+Vani type variable and the value is - "Hello, User!"
+declaration execution started....name of the identifier is - greeting
+statements
+data type is - AKSHARA
+name of the identifier is - U
+declaration execution started....name of the identifier is - initial
+statements
+Vani type variable and the value is - "Greeting:"
+printing to the console....
+statements
+name of the identifier is - greeting
+printing to the console....
+statements
+Vani type variable and the value is - "First character of User:"
+printing to the console....
+statements
+name of the identifier is - initial
+printing to the console....
+statements
 data type is - JALA
-name of the identifier is - calculateInterest
-argument_list
-arguments
-Error: syntax error
+Jala type variable and the value is - 0.000000
+declaration execution started....name of the identifier is - invalidDivision
+statements
+data type is - JALA
+name of the identifier is - a
+name of the identifier is - invalidDivision
+division operation execution started
+declaration execution started....name of the identifier is - divResult
+statements
+name of the identifier is - divResult
+printing to the console....
+statements
+Vani type variable and the value is - "Caught an error: Division by zero"
+printing to the console....
+statements
+try_catch_block
+statement
+statements
+data type is - VANI
+Vani type variable and the value is - "Thank you for using the Utility Application!"
+declaration execution started....name of the identifier is - farewellMessage
+statements
+name of the identifier is - farewellMessage
+printing to the console....
+statements
+main_function execution started
+program execution started

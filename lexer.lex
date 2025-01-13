@@ -59,6 +59,8 @@
 
 
 
+
+
 [a-zA-Z_][a-zA-Z0-9_]*  {yylval.sval = strdup(yytext); return IDENTIFIER; }
 [0-9]+                   {yylval.ival = atoi(yytext); return INTEGER_LITERAL; }
 [0-9]+\.[0-9]+          {yylval.fval = atof(yytext); return FLOAT_LITERAL; }  
@@ -68,7 +70,7 @@
 "//".*                   { /* Ignore single line comments */ }
 "/*"([^*]|\*+[^*/])*\*+"/" { /* Ignore multi line comments */ }
 
-[ \t\n]+                 { /* Ignore whitespace */ }
+[ \t\n\']+                 { /* Ignore whitespace */ }
 .                        { printf("Unknown token: %s\n", yytext); }
 
 %%
